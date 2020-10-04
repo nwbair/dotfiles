@@ -1,0 +1,30 @@
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias ls='ls --color=auto'
+alias ll='ls -l'
+alias l='ls -lFh --color=auto'     #size,show type,human readable
+alias la='ls -lAFh --color=auto'   #long list,show almost all,show type,human readable
+alias lr='ls -tRFh --color=auto'   #sorted by date,recursive,show type,human readable
+alias lt='ls -ltFh --color=auto'   #long list,sorted by date,show type,human readable
+alias ll='ls -l --color=auto'      #long list
+alias ldot='ls -ld .* --color=auto'
+alias lS='ls -1FSsh --color=auto'
+alias lart='ls -1Fcart --color=auto'
+alias lrt='ls -1Fcrt --color=auto'
+alias cd..='cd ..'		  #in case of typos
+alias ..='cd ..'
+alias ...='cd ../../../'
+alias ....='cd ../../../../'
+alias .....='cd ../../../../..'
+alias .4='cd ../../../../'
+alias .5='cd ../../../../..'
+alias grep='grep --color=auto'    #colorize grep output
+alias mount='mount | column -t'	  #make mount command pretty
+alias h='history'                 #display history
+alias vi='vim'			  #vim as default
+alias ports='netstat -tulanp'     #get open ports
+alias apt='sudo apt'
+alias update='sudo apt update && sudo apt upgrade'
+alias df='df -H'
+alias du='du -ch'
+alias zshrc='sudo nano ~/.zshrc' # Quick access to the ~/.zshrc file
+alias config='/usr/bin/git --git-dir=/home/nick/.cfg/ --work-tree=/home/nick'
