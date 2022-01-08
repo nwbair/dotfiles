@@ -10,6 +10,14 @@
     ~/.vimrc: vim/vimrc
     ~/.zshrc: zsh/zshrc
     ~/.gitconfig: git/gitconfig
+    ~/.antigenrc: antigen/antigenrc
+    ~/.p10k.zsh: zsh/p10k.zsh
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
+  - 
+    command: mkdir -p antigen && curl -L git.io/antigen > antigen/antigen.zsh
+    stdin: true
+    stdout: true
+    description: Installing Antigen...
+    quiet: true
