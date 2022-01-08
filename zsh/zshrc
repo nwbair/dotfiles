@@ -84,13 +84,13 @@ antigen init ~/.antigenrc
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  git
-  zsh-autosuggestions
-  k
-  zsh-syntax-highlighting
-  zsh-z
-  sudo
-  history
+  #git
+  #zsh-autosuggestions
+  #k
+  #zsh-syntax-highlighting
+  #zsh-z
+  #sudo
+  #history
   )
 
 source $ZSH/oh-my-zsh.sh
