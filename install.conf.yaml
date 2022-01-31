@@ -9,6 +9,7 @@
 - link:
     ~/.vimrc: vim/vimrc
     ~/.zshrc: zsh/zshrc
+    ~/.profile: profile/profile
     ~/.gitconfig: git/gitconfig
     ~/.antigenrc: antigen/antigenrc
     ~/.p10k.zsh: zsh/p10k.zsh
