@@ -46,7 +46,8 @@
     command: exec zsh
     description: Restart zsh...
   -
-  - [chsh -s $(which zsh), Making zsh the default shell]
+    command: chsh -s $(which zsh)
+    description: Making zsh the default shell
   -
     command: mkdir -p $HOME/antigen && curl -L git.io/antigen > $HOME/antigen/antigen.zsh
     stdin: true
