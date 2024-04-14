@@ -6,7 +6,7 @@ My dotfiles, managed with [chezmoi](https://github.com/twpayne/chezmoi).
 
 ```bash
 # Install chezmoi
-sudo sh curl -sfL https://git.io/chezmoi
+sudo curl -sfL https://git.io/chezmoi | sudo sh
 
 # If chezmoi doesn't run, might need to move the file to a different location.
 # Or make sure ./bin is in the Path.
