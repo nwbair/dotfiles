@@ -18,3 +18,5 @@ antigen init ~/.antigenrc
 
 # Making sure zoxide is active and remap the Z and ZI command to CD
 eval "$(zoxide init --cmd cd zsh)"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
