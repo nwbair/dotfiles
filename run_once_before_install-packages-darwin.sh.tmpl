@@ -1,0 +1,11 @@
+[[- if eq .chezmoi.os "darwin" -}}
+#!/bin/bash
+
+brew bundle --no-lock --file=/dev/stdin <<EOF
+brew "zoxide"
+brew "fzf"
+#cask "{program} "
+cask "iterm2"
+cask "visual-studio-code"
+EOF
+{{ end -}}
