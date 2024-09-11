@@ -1,6 +1,6 @@
 {{ if eq .chezmoi.os "linux" -}}
 #!/bin/sh
-sudo apt-get -y install zsh vim
+sudo apt-get -y install zsh vim gdu
 chsh -s $(which zsh)
 curl -sS https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | bash
 
