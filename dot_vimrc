@@ -18,13 +18,13 @@ call plug#end()
 
 " Startup Settings
 	syntax on
-    let mapleader=" "
+  let mapleader=" "
 	set noerrorbells
 	set tabstop=2 softtabstop=2
 	set shiftwidth=2
 	set expandtab
 	set smartindent
-    set nofoldenable
+  set nofoldenable
 	set nowrap
 	set smartcase
 	set noswapfile
@@ -34,18 +34,34 @@ call plug#end()
 	set nocompatible
 	set number relativenumber
 	colorscheme onedark 
-    set background=dark
-    set termguicolors
+  set background=dark
+  set termguicolors
 	filetype plugin on
 	set encoding=utf-8
 	set wildmenu
 	set wildmode=longest,list,full
-	set laststatus=2
-	if !has('gui_running')
+	set noshowmode
+  set laststatus=2
+  if !has('gui_running')
 	  set t_Co=256
 	endif
 	autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 	set spell spelllang=en_us
+
+let g:lightline = {
+  \ 'active': {
+  \   'left': [ [ 'mode', 'paste' ], [ 'readonly', 'filename', 'modified' ] ],
+  \   'right': [ [ 'hostname' ], [ 'lineinfo'], [ 'percent'], ['fileformat', 'fileencoding', 'filetype'] ]
+  \ },
+  \ 'component_function': {
+  \   'hostname': 'LightlineHostname',
+  \ },
+  \ }
+
+function! LightlineHostname()
+  return system('hostname -s | tr -d "\\n"')
+endfunction  
+  
 " Key Maps
 	map <C-o> :NERDTreeToggle<CR>
 	map <C-\> :Goyo<CR>
