@@ -32,7 +32,7 @@ call plug#end()
 	set incsearch
 	set history=5000
 	set nocompatible
-	set number relativenumber
+" 	set number relativenumber
 	colorscheme onedark 
   set background=dark
   set termguicolors
