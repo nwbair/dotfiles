@@ -8,20 +8,12 @@ My dotfiles, managed with [chezmoi](https://github.com/twpayne/chezmoi).
 Install chezmoi
 
 ```bash
-sudo curl -sfL https://git.io/chezmoi | sudo sh
-```
-
-If chezmoi doesn't run, might need to move the file to a different location.
- Or make sure ./bin is in the Path.
-
- ```bash
- sudo mv ./bin/chezmoi /usr/local/bin/
+curl -fsSL https://raw.githubusercontent.com/nwbair/dotfiles/main/bootstrap.sh | bash
 ```
 
 Run chezmoi
 
 ```bash
-chezmoi init https://github.com/nwbair/dotfiles.git
 chezmoi apply
 ```
 Update repo URL to use ssh
