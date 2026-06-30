@@ -6,6 +6,10 @@ curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x8
 chmod +x nvim-linux-x86_64.appimage
 sudo mv nvim-linux-x86_64.appimage /usr/local/bin/nvim
 
+mkdir -p ~/.npm-global
+npm config set prefix ~/.npm-global
+export PATH="$HOME/.npm-global/bin:$PATH"
+
 # Install tree-sitter-cli (needed for treesitter parser compilation)
 npm install -g tree-sitter-cli
 
