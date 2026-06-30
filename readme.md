@@ -8,14 +8,8 @@ My dotfiles, managed with [chezmoi](https://github.com/twpayne/chezmoi).
 Install chezmoi
 
 ```bash
-sudo curl -sfL https://git.io/chezmoi | sudo sh
-```
-
-If chezmoi doesn't run, might need to move the file to a different location.
- Or make sure ./bin is in the Path.
-
- ```bash
- sudo mv ./bin/chezmoi /usr/local/bin/
+```bash
+sh -c "$(curl -fsLS get.chezmoi.io)"
 ```
 
 Run chezmoi
