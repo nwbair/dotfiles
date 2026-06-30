@@ -8,7 +8,6 @@ My dotfiles, managed with [chezmoi](https://github.com/twpayne/chezmoi).
 Install chezmoi
 
 ```bash
-```bash
 sh -c "$(curl -fsLS get.chezmoi.io)"
 ```
 
