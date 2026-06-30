@@ -14,7 +14,6 @@ curl -fsSL https://raw.githubusercontent.com/nwbair/dotfiles/main/bootstrap.sh |
 Run chezmoi
 
 ```bash
-chezmoi apply
 ```
 Update repo URL to use ssh
 
